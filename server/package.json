@@ -2,10 +2,9 @@
   "name": "ai-ochsms-server",
   "version": "1.0.0",
   "description": "AI-Enabled Community Health Services Management System - Backend",
-  "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "npx tsx watch src/index.ts",
+    "dev": "node --loader tsx/esm src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "jest",
